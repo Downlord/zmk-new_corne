@@ -84,10 +84,10 @@ jobs:
           use_unzip: false
           
       - name: Copy left result out of nix store
-        run: cp eyelash_corne_studio_left.uf2 corne_left_${{ steps.semver.outputs.next }}.uf2
+        run: cp firmware/eyelash_corne_studio_left.uf2 corne_left_${{ steps.semver.outputs.next }}.uf2
 
       - name: Copy right result out of nix store
-        run: cp nice_view-eyelash_corne_right-zmk.uf2 corne_right_${{ steps.semver.outputs.next }}.uf2
+        run: cp firmware/nice_view-eyelash_corne_right-zmk.uf2 corne_right_${{ steps.semver.outputs.next }}.uf2
 
       - name: Upload result
         uses: actions/upload-artifact@v4
