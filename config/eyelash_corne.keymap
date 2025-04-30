@@ -67,11 +67,13 @@
         kp_COPY {
             bindings = <&kp_COPY>;
             key-positions = <31 30>;
+            layers = <0>;
         };
 
         kp_CUT {
             bindings = <&kp_CUT>;
             key-positions = <32 30>;
+            layers = <0>;
         };
 
         kp_PASTE {
