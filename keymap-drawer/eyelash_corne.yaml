@@ -29,7 +29,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '#', h: RIGHT GUI}
   - {t: '`', s: '~'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: RGB_BT}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: MAGIC}
   - Y
   - X
   - C
@@ -42,14 +42,14 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - \
-  - {t: '''', h: RGB_BT, s: '"'}
+  - {t: '''', h: MAGIC, s: '"'}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:backspace$$', h: NUMBER}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: CURSOR_NAV}
-  - {t: '$$mdi:keyboard-return$$', h: CURSOR_NAV}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - {t: '$$mdi:backspace$$', h: NUM}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NAV}
+  - {t: '$$mdi:keyboard-return$$', h: NAV}
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  NUMBER:
+  NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -98,7 +98,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '0', s: )}
-  SYMBOL:
+  SYM:
   - '!'
   - {t: ',', s: <}
   - '@'
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  CURSOR_NAV:
+  NAV:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-up$$
   - $$mdi:pan-left$$
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:mouse-left-click-outline$$', type: held alternate}
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  RGB_BT:
+  MAGIC:
   - $$mdi:progress-download$$
   - RGB COLOR HSB(360,99,50)
   - RGB SAI
@@ -266,7 +266,7 @@ combos:
   l: [QWERTY]
 - p: [8, 9]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [QWERTY, NUMBER, SYMBOL]
+  l: [QWERTY, NUM, SYM]
 - p: [30, 15]
   k: {t: '`', s: '~'}
   l: [QWERTY]
@@ -281,13 +281,13 @@ combos:
   l: [QWERTY]
 - p: [9, 10]
   k: $$mdi:backspace-reverse-outline$$
-  l: [QWERTY, NUMBER, SYMBOL]
+  l: [QWERTY, NUM, SYM]
 - p: [4, 17]
   k: $
   l: [QWERTY]
 - p: [24, 25]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, NUMBER, SYMBOL]
+  l: [QWERTY, NUM, SYM]
 - p: [32, 17]
   k: {t: '=', s: +}
   l: [QWERTY]
@@ -316,7 +316,7 @@ combos:
   l: [QWERTY]
 - p: [16, 15]
   k: $$mdi:keyboard-tab$$
-  l: [QWERTY, NUMBER, SYMBOL]
+  l: [QWERTY, NUM, SYM]
 - p: [33, 18]
   k: '~'
   l: [QWERTY]
