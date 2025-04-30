@@ -41,7 +41,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - \
   - {t: '''', s: '"'}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:backspace$$', h: NUMBER}
