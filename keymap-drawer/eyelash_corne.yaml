@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - \
-  - {t: '''', s: '"'}
+  - {t: '''', h: RGB_BT, s: '"'}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:backspace$$', h: NUMBER}
   - {t: '$$mdi:backspace-reverse-outline$$', h: CURSOR_NAV}
@@ -99,52 +99,52 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '0', s: )}
   SYMBOL:
-  - {t: '$$mdi:transfer$$', type: trans}
   - '!'
+  - {t: ',', s: <}
   - '@'
   - '#'
-  - $
-  - '%'
+  - {t: ;, s: ':'}
+  - '?'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - ^
-  - '&'
-  - '*'
+  - {t: '`', s: '~'}
+  - ':'
   - (
   - )
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - '*'
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:bluetooth-off$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '-', s: _}
+  - '#'
+  - ^
   - {t: '=', s: +}
+  - _
+  - $
+  - '*'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '"'
+  - '"'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
-  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - OUT USB
-  - OUT BLE
+  - '~'
+  - <
+  - '|'
+  - {t: '-', s: _}
+  - '>'
+  - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB5'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - _
-  - +
+  - {t: '''', s: '"'}
+  - {t: /, s: '?'}
   - '{'
   - '}'
   - '|'
-  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: '|'}
+  - ':'
+  - '@'
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   CURSOR_NAV:
@@ -238,7 +238,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - OUT USB
