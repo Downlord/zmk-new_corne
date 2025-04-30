@@ -64,18 +64,18 @@
     combos {
         compatible = "zmk,combos";
 
-        COPY {
-            bindings = <&COPY>;
+        kp_COPY {
+            bindings = <&kp_COPY>;
             key-positions = <31 30>;
         };
 
-        CUT {
-            bindings = <&CUT>;
+        kp_CUT {
+            bindings = <&kp_CUT>;
             key-positions = <32 30>;
         };
 
-        PASTE {
-            bindings = <&PASTE>;
+        kp_PASTE {
+            bindings = <&kp_PASTE>;
             key-positions = <32 31>;
         };
 
@@ -206,25 +206,25 @@
     };
 
     macros {
-        COPY: COPY {
+        kp_COPY: kp_COPY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(C)>;
-            label = "COPY";
+            label = "kp_COPY";
         };
 
-        CUT: CUT {
+        kp_CUT: kp_CUT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(X)>;
-            label = "CUT";
+            label = "kp_CUT";
         };
 
-        PASTE: PASTE {
+        kp_PASTE: kp_PASTE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(V)>;
-            label = "PASTE";
+            label = "kp_PASTE";
         };
     };
 
