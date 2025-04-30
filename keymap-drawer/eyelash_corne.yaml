@@ -247,11 +247,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [31, 30]
-  k: '&COPY'
+  k: '&kp_COPY'
 - p: [32, 30]
-  k: '&CUT'
+  k: '&kp_CUT'
 - p: [32, 31]
-  k: '&PASTE'
+  k: '&kp_PASTE'
 - p: [10, 25]
   k: '&'
 - p: [2, 15]
