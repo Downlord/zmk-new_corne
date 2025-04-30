@@ -1,0 +1,62 @@
+name: Generate Build
+
+on:
+  workflow_dispatch:
+  # push:
+  #   paths-ignore:
+  #     - "keymap-drawer/**"
+
+permissions:
+  contents: write
+  discussions: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git Semantic Version
+        uses: PaulHatch/semantic-version@v5.4.0
+
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Get Next Version
+        id: semver
+        uses: ietf-tools/semver-action@v1
+        with:
+          token: ${{ github.token }}
+          branch: main
+          patchAll: true
+          noNewCommitBehavior: silent
+          noVersionBumpBehavior: silent
+          fallbackTag: v0.0.1
+
+      - name: Copy left result out of nix store
+        run: cp eyelash_corne_studio_left.uf2 corne_left_${{ steps.semver.outputs.next }}.uf2
+
+      - name: Copy right result out of nix store
+        run: cp nice_view-eyelash_corne_right-zmk.uf2 corne_right_${{ steps.semver.outputs.next }}.uf2
+
+      - name: Upload result
+        uses: actions/upload-artifact@v4
+        with:
+          name: corne_left_${{ steps.semver.outputs.next }}.uf2
+          path: corne_left_${{ steps.semver.outputs.next }}.uf2
+
+      - name: Upload result
+        uses: actions/upload-artifact@v4
+        with:
+          name: corne_right_${{ steps.semver.outputs.next }}.uf2
+          path: corne_right_${{ steps.semver.outputs.next }}.uf2
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Release ${{ steps.semver.outputs.next }}
+          tag_name: ${{ steps.semver.outputs.next }}
+          generate_release_notes: true
+          make_latest: true
+          files: |
+            corne_left_${{ steps.semver.outputs.next }}.uf2
+            corne_right_${{ steps.semver.outputs.next }}.uf2
