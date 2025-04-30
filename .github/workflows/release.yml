@@ -1,4 +1,4 @@
-name: Generate Build
+name: Generate Release
 
 on:
   workflow_dispatch:
@@ -11,11 +11,9 @@ permissions:
   discussions: write
   
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     steps:
-      - name: Git Semantic Version
-        uses: PaulHatch/semantic-version@v5.4.0
 
       - uses: actions/checkout@v4
         with:
