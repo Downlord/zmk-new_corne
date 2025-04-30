@@ -8,3 +8,41 @@ on:
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+  # release:
+  #   runs-on: ubuntu-latest
+  #   steps:
+    
+  #     - uses: actions/checkout@v4
+  #       with:
+  #         submodules: recursive
+
+  #     - name: Get Next Version
+  #       id: semver
+  #       uses: ietf-tools/semver-action@v1
+  #       with:
+  #         token: ${{ github.token }}
+  #         branch: main
+  #         patchAll: true
+  #         noNewCommitBehavior: silent
+  #         noVersionBumpBehavior: silent
+  #         fallbackTag: v0.0.1
+
+  #     - name: Copy result out of nix store
+  #       run: cp combined/glove80.uf2 glove80_${{ steps.semver.outputs.next }}.uf2
+
+  #     - name: Upload result
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: glove80_${{ steps.semver.outputs.next }}.uf2
+  #         path: glove80_${{ steps.semver.outputs.next }}.uf2
+
+  #     - name: Release
+  #       uses: softprops/action-gh-release@v2
+  #       with:
+  #         name: Release ${{ steps.semver.outputs.next }}
+  #         tag_name: ${{ steps.semver.outputs.next }}
+  #         generate_release_notes: true
+  #         make_latest: true
+  #         files: |
+  #           glove80_${{ steps.semver.outputs.next }}.uf2
