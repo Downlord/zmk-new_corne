@@ -118,6 +118,91 @@
             bindings = <&kp CARET>;
             key-positions = <22 7>;
         };
+
+        kp_DELETE {
+            bindings = <&kp DELETE>;
+            key-positions = <9 10>;
+        };
+
+        kp_DOLLAR {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 17>;
+        };
+
+        kp_ENTER {
+            bindings = <&kp ENTER>;
+            key-positions = <24 25>;
+        };
+
+        kp_EQUAL {
+            bindings = <&kp EQUAL>;
+            key-positions = <32 17>;
+        };
+
+        kp_ESC {
+            bindings = <&kp ESCAPE>;
+            key-positions = <2 3>;
+        };
+
+        kp_HASH {
+            bindings = <&kp HASH>;
+            key-positions = <16 3>;
+        };
+
+        kp_MINUS {
+            bindings = <&kp MINUS>;
+            key-positions = <37 23>;
+        };
+
+        kp_PERCENT {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 18>;
+        };
+
+        kp_PIPE {
+            bindings = <&kp PIPE>;
+            key-positions = <39 25>;
+        };
+
+        kp_PLUS {
+            bindings = <&kp PLUS>;
+            key-positions = <8 23>;
+        };
+
+        kp_SLASH {
+            bindings = <&kp SLASH>;
+            key-positions = <38 24>;
+        };
+
+        kp_STAR {
+            bindings = <&kp STAR>;
+            key-positions = <24 9>;
+        };
+
+        kp_TAB {
+            bindings = <&kp TAB>;
+            key-positions = <16 15>;
+        };
+
+        kp_TILDE {
+            bindings = <&kp TILDE>;
+            key-positions = <33 18>;
+        };
+
+        kp_UNDERSCORE {
+            bindings = <&kp UNDER>;
+            key-positions = <36 22>;
+        };
+
+        sk_MEH {
+            bindings = <&sk LS(LC(LEFT_ALT))>;
+            key-positions = <46 47>;
+        };
+
+        kp_ALTSPACE {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <46 45>;
+        };
     };
 
     macros {
