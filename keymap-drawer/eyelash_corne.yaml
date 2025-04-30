@@ -248,8 +248,10 @@ layers:
 combos:
 - p: [31, 30]
   k: '&kp_COPY'
+  l: [QWERTY]
 - p: [32, 30]
   k: '&kp_CUT'
+  l: [QWERTY]
 - p: [32, 31]
   k: '&kp_PASTE'
 - p: [10, 25]
