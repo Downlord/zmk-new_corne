@@ -266,6 +266,7 @@ combos:
   l: [QWERTY]
 - p: [8, 9]
   k: {t: '$$mdi:backspace$$', type: backspace}
+  l: [QWERTY, NUMBER, SYMBOL]
 - p: [30, 15]
   k: {t: '`', s: '~'}
   l: [QWERTY]
@@ -280,11 +281,13 @@ combos:
   l: [QWERTY]
 - p: [9, 10]
   k: $$mdi:backspace-reverse-outline$$
+  l: [QWERTY, NUMBER, SYMBOL]
 - p: [4, 17]
   k: $
   l: [QWERTY]
 - p: [24, 25]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY, NUMBER, SYMBOL]
 - p: [32, 17]
   k: {t: '=', s: +}
   l: [QWERTY]
@@ -313,6 +316,7 @@ combos:
   l: [QWERTY]
 - p: [16, 15]
   k: $$mdi:keyboard-tab$$
+  l: [QWERTY, NUMBER, SYMBOL]
 - p: [33, 18]
   k: '~'
   l: [QWERTY]
