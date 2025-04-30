@@ -234,10 +234,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp LALT    &kp Q           &kp W           &kp E               &kp R             &kp T                         &none         &kp Z        &kp U              &kp I                &kp O            &kp P                 &kp SLASH
-&td0        &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                  &none  &none  &none  &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI HASH    &kp GRAVE
-&caps_word  &kp Y           &kp X           &kp C               &kp V             &kp B         &none           &none         &kp N        &kp M              &kp COMMA            &kp DOT          &kp NON_US_BACKSLASH  &kp SQT
-                                            &kp ESC             &lt 1 BACKSPACE   &lt 3 DELETE                                &lt 3 ENTER  &lt 2 SPACE        &kp ENTER
+&kp LALT          &kp Q           &kp W           &kp E               &kp R             &kp T                         &none         &kp Z        &kp U              &kp I                &kp O            &kp P                 &kp SLASH
+&td0              &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                  &none  &none  &none  &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI HASH    &kp GRAVE
+&lt 4 LEFT_SHIFT  &kp Y           &kp X           &kp C               &kp V             &kp B         &none           &none         &kp N        &kp M              &kp COMMA            &kp DOT          &kp NON_US_BACKSLASH  &kp SQT
+                                                  &kp ESC             &lt 1 BACKSPACE   &lt 3 DELETE                                &lt 3 ENTER  &lt 2 SPACE        &kp ENTER
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
