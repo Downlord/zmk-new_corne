@@ -273,7 +273,7 @@
         };
 
         NUMBER {
-            display-name = "NUMBER";
+            display-name = "NUM";
             bindings = <
 &none  &none         &none         &none             &none           &none                   &none         &kp N7        &kp N8  &kp N9  &kp KP_MULTIPLY  &none      &none
 &none  &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &none            &none  &none  &none  &kp N4        &kp N5  &kp N6  &kp MINUS        &kp EQUAL  &none
@@ -285,7 +285,7 @@
         };
 
         SYMBOL {
-            display-name = "SYMBOL";
+            display-name = "SYM";
             bindings = <
 &kp EXCLAMATION  &kp COMMA      &kp AT     &kp HASH       &kp SEMICOLON     &kp QUESTION                  &none         &kp GRAVE          &kp COLON          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &trans
 &kp HASH         &kp CARET      &kp EQUAL  &kp UNDER      &kp DOLLAR        &kp ASTERISK           &none  &none  &none  &kp DOUBLE_QUOTES  &kp DOUBLE_QUOTES  &kp LBKT              &kp RBKT               &kp BSLH      &trans
@@ -297,7 +297,7 @@
         };
 
         CURSOR_NAV {
-            display-name = "CURSOR_NAV";
+            display-name = "NAV";
             bindings = <
 &none  &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP      &msc SCRL_RIGHT  &msc SCRL_UP                    &none         &kp PAGE_UP    &none                        &cursor_nav LC(HOME) UP_ARROW  &none                  &none          &none
 &none  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &msc SCRL_DOWN           &none  &none  &none  &kp PAGE_DOWN  &cursor_nav HOME LEFT_ARROW  &cursor_nav LC(END) DOWN       &cursor_nav END RIGHT  &none          &none
@@ -309,7 +309,7 @@
         };
 
         MAGIC {
-            display-name = "RGB_BT";
+            display-name = "MAGIC";
             bindings = <
 &bootloader  &rgb_ug RGB_COLOR_HSB(360,99,50)   &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                  &none         &bt BT_CLR_ALL  &bt BT_CLR    &none         &none  &none  &bootloader
 &sys_reset   &rgb_ug RGB_COLOR_HSB(125,100,50)  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF           &none  &none  &none  &none           &none         &none         &none  &none  &sys_reset
