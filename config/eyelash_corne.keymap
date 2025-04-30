@@ -103,6 +103,7 @@
         kp_BACKSPACE {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
+            layers = <0 1 2>;
         };
 
         kp_BACKTICK {
@@ -132,6 +133,7 @@
         kp_DELETE {
             bindings = <&kp DELETE>;
             key-positions = <9 10>;
+            layers = <0 1 2>;
         };
 
         kp_DOLLAR {
@@ -143,6 +145,7 @@
         kp_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <24 25>;
+            layers = <0 1 2>;
         };
 
         kp_EQUAL {
@@ -201,6 +204,7 @@
         kp_TAB {
             bindings = <&kp TAB>;
             key-positions = <16 15>;
+            layers = <0 1 2>;
         };
 
         kp_TILDE {
